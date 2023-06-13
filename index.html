@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CodeKeeper</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="img">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_618753-MLA48578386634_122021-F.webp" alt="" />
+            </div>
+            <div class="p">
+                <p>Ping Pong Score Keeper</p>
+            </div>
+            <div>
+                <h1><span id="playerOneScore">0</span>To<span id="playerTwoScore">0</span></h1>
+                <div id="ganador"></div>
+                <p>Usar los botones de abajo para registar el score</p>
+                <label for="score"><h3>Playing up To</h3></label>
+                <select name="upTo" id="scoreSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6" selected>6</option>
+                </select>
+                <div class="scoreContainer">
+                    <div id="playerOnePoint" class="inline-block">+1 Player One</div>
+                    <div id="playerTwoPoint" class="inline-block">+1 Player Two</div>
+                    <div id="resetScore" class="inline-block">Reset</div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
